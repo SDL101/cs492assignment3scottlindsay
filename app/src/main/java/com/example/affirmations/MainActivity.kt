@@ -1,3 +1,7 @@
+//  Scott Lindsay
+//  OSU
+//  CS492
+
 package com.example.affirmations
 
 import android.os.Bundle
@@ -17,6 +21,8 @@ import androidx.compose.ui.unit.dp
 import com.example.affirmations.data.Datasource
 import com.example.affirmations.model.Course
 import com.example.affirmations.ui.theme.AffirmationsTheme
+import androidx.compose.ui.text.font.FontWeight
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,7 +62,7 @@ fun CourseCard(course: Course) {
             // First Line: Department and Number (Bold)
             Text(
                 text = "${course.department} ${course.number}",
-                style = MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Bold),
                 modifier = Modifier.padding(bottom = 4.dp)
             )
             // Second Line: Title
@@ -68,7 +74,7 @@ fun CourseCard(course: Course) {
             // Third Line: Capacity
             Text(
                 text = "Capacity: ${course.capacity}",
-                style = MaterialTheme.typography.bodySmall
+                style = MaterialTheme.typography.bodyMedium
             )
         }
     }

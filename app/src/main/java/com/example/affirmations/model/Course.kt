@@ -1,3 +1,7 @@
+//  Scott Lindsay
+//  OSU
+//  CS492
+
 package com.example.affirmations.model
 
 import androidx.annotation.StringRes

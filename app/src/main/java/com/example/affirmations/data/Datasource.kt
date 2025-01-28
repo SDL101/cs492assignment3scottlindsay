@@ -1,3 +1,7 @@
+//  Scott Lindsay
+//  OSU
+//  CS492
+
 package com.example.affirmations.data
 
 import com.example.affirmations.R
