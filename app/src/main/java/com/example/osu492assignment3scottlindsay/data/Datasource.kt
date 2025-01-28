@@ -2,10 +2,10 @@
 //  OSU
 //  CS492
 
-package com.example.affirmations.data
+package com.example.osu492assignment3scottlindsay.data
 
-import com.example.affirmations.R
-import com.example.affirmations.model.Course
+import com.example.osu492assignment3scottlindsay.R
+import com.example.osu492assignment3scottlindsay.model.Course
 
 class Datasource {
     fun loadCourses(): List<Course> {

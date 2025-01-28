@@ -2,7 +2,7 @@
 //  OSU
 //  CS492
 
-package com.example.affirmations.model
+package com.example.osu492assignment3scottlindsay.model
 
 import androidx.annotation.StringRes
 

@@ -2,7 +2,7 @@
 //  OSU
 //  CS492
 
-package com.example.affirmations
+package com.example.osu492assignment3scottlindsay
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -18,17 +18,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.affirmations.data.Datasource
-import com.example.affirmations.model.Course
-import com.example.affirmations.ui.theme.AffirmationsTheme
+import com.example.osu492assignment3scottlindsay.data.Datasource
+import com.example.osu492assignment3scottlindsay.model.Course
+import com.example.osu492assignment3scottlindsay.ui.theme.Osu492Assignment3ScottLindsayTheme
 import androidx.compose.ui.text.font.FontWeight
-
+import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AffirmationsTheme {
+            Osu492Assignment3ScottLindsayTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -81,9 +81,10 @@ fun CourseCard(course: Course) {
 }
 
 // Step 3: Preview Function
+@Preview
 @Composable
 fun CourseListPreview() {
-    AffirmationsTheme {
+    Osu492Assignment3ScottLindsayTheme {
         CourseList(courses = Datasource().loadCourses())
     }
 }
