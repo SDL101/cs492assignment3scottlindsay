@@ -1,38 +1,24 @@
-/*
- * Copyright (C) 2023 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.example.affirmations.data
 
 import com.example.affirmations.R
-import com.example.affirmations.model.Affirmation
+import com.example.affirmations.model.Course
 
-/**
- * [Datasource] generates a list of [Affirmation]
- */
-class Datasource() {
-    fun loadAffirmations(): List<Affirmation> {
-        return listOf<Affirmation>(
-            Affirmation(R.string.affirmation1, R.drawable.image1),
-            Affirmation(R.string.affirmation2, R.drawable.image2),
-            Affirmation(R.string.affirmation3, R.drawable.image3),
-            Affirmation(R.string.affirmation4, R.drawable.image4),
-            Affirmation(R.string.affirmation5, R.drawable.image5),
-            Affirmation(R.string.affirmation6, R.drawable.image6),
-            Affirmation(R.string.affirmation7, R.drawable.image7),
-            Affirmation(R.string.affirmation8, R.drawable.image8),
-            Affirmation(R.string.affirmation9, R.drawable.image9),
-            Affirmation(R.string.affirmation10, R.drawable.image10))
+class Datasource {
+    fun loadCourses(): List<Course> {
+        return listOf(
+            Course(R.string.my_name, "Assignment", 3, 1),
+            Course(R.string.course_161, "CS", 161, 100),
+            Course(R.string.course_162, "CS", 162, 100),
+            Course(R.string.course_225, "CS", 225, 200),
+            Course(R.string.course_261, "CS", 261, 200),
+            Course(R.string.course_271, "CS", 271, 200),
+            Course(R.string.course_290, "CS", 290, 200),
+            Course(R.string.course_325, "CS", 325, 300),
+            Course(R.string.course_340, "CS", 340, 300),
+            Course(R.string.course_344, "CS", 344, 300),
+            Course(R.string.course_361, "CS", 361, 300),
+            Course(R.string.course_362, "CS", 362, 300),
+            Course(R.string.course_467, "CS", 467, 400)
+        )
     }
 }
